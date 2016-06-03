@@ -1,0 +1,25 @@
+development:
+  FACEBOOK_KEY: "api-key"
+  FACEBOOK_SECRET: "api-secret"
+  
+  GOOGLE_KEY: "api-key"
+  GOOGLE_SECRET: "api-secret"
+
+  TWITTER_KEY: "api-key"
+  TWITTER_SECRET: "api-secret"
+
+  YAHOOJP_KEY: "api-key"
+  YAHOOJP_SECRET: "api-secret"
+
+production:
+  FACEBOOK_KEY: "api-key"
+  FACEBOOK_SECRET: "api-secret"  
+
+  GOOGLE_KEY: "api-key"
+  GOOGLE_SECRET: "api-secret"
+  
+  TWITTER_KEY: "api-key"
+  TWITTER_SECRET: "api-secret"
+
+  YAHOOJP_KEY: "api-key"
+  YAHOOJP_SECRET: "api-secret"
