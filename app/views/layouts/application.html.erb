@@ -19,16 +19,16 @@
       <% if user_signed_in? %>
         <ul class="nav navbar-nav pull-right">
           <li><%= image_tag current_user.image_url, alt: current_user.name %></li>
-          <li><%= link_to 'プロフィール変更', edit_user_registration_path %></li>
-          <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
         </ul>
       <% else %>
         <ul class="nav navbar-nav">
-          <li><%= link_to 'Yahoo Login!', user_yahoojp_omniauth_authorize_path %></li>
+          <li><%= link_to 'YahooJP!', user_yahoojp_omniauth_authorize_path %></li>
           <li><%= link_to 'Google+', user_google_omniauth_authorize_path %></li>
           <li><%= link_to 'Facebook', user_facebook_omniauth_authorize_path %></li>
-          <li><%= link_to "サインイン", new_user_registration_path %></li>
-      		<li><%= link_to "ログイン", new_user_session_path %></li>          
+          <li><%= link_to "SignIn", new_user_registration_path %></li>
+      		<li><%= link_to "Login", new_user_session_path %></li>          
         </ul>
       <% end %>
       
