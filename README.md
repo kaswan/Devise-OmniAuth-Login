@@ -21,8 +21,8 @@ Also add authentication via social networks (Facebook, Google+, Yahoojp) with th
 * mv config/social_api_keys.yml.base social_api_keys.yml
 
 For API Key and secret Navigate to below page
-* Facebook- developers.facebook.com (callback -> http://localhost:3000)
-* Google- console.developers.google.com (callback -> http://localhost:3000/users/auth/google/callback)
+* Facebook- https://developers.facebook.com (callback -> http://localhost:3000)
+* Google- https://console.developers.google.com (callback -> http://localhost:3000/users/auth/google/callback)
 * YAHOO JAPAN- https://e.developer.yahoo.co.jp (callback -> http://localhost:3000/users/auth/yahoojp/callback)
 
 ## STEP-5: run application
