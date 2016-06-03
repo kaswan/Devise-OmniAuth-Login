@@ -7,7 +7,8 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '1fc4d8f3492f180e3c36aaab1863274d64928ec73de4973d0d0f357080b964c287b6b0211250fd6705c872f0c85ebf7fa1b2e5110b22961183fb334213ffd326'
-
+  config.secret_key = '6e0df0940626f9fd5ff463e2f04d5d0cba3e159ecf5075e821ffb27cf148ec6636aa8c11877c2eb251687962eabbc87c28e0c050ba38f07be31e97d07c66ef05'
+  
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
@@ -252,7 +253,6 @@ Devise.setup do |config|
               :image_size => 50
             }
       
-  config.omniauth :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
   config.omniauth :yahoojp, ENV['YAHOOJP_KEY'], ENV['YAHOOJP_SECRET'],  
           {
             :scope => "openid email profile address",
@@ -261,7 +261,10 @@ Devise.setup do |config|
             :display => 'popup',
             :windowWidth  => "500",
             :windowHeight => "400"
-          }    
+          }
+   
+  #config.omniauth :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
+                             
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
