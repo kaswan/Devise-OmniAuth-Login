@@ -13,12 +13,13 @@ Also add authentication via social networks (Facebook, Google+, Yahoojp) with th
 ## STEP-2: 
 * bundle install
 
-## STEP-3: Change Database detail and migrate
+## STEP-3: Set Database and Social-keys file
 * cp config/database.yml.base config/database.yml
-* rake db:migrate
+* cp config/social_api_keys.yml.base config/social_api_keys.yml
 
-## STEP-4: Change Social Api keys deatil
-* cp config/social_api_keys.yml.base social_api_keys.yml
+
+## STEP-4: Database migration
+* rake db:migrate
 
 For API Key and secret Navigate to below page
 * Facebook- https://developers.facebook.com (callback -> http://localhost:3000)
@@ -27,7 +28,7 @@ For API Key and secret Navigate to below page
 
 ## STEP-5: run application
 * rails server 
-
+DONE!
 
 ##Notes
 * This apllication primarly based on email login account. If user login through other social account with same email, user data get updates. I can't using Twitter here because they don't provide Email Address
